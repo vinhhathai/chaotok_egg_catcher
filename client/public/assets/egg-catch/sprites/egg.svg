@@ -1,0 +1,26 @@
+<svg width="80" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main egg shape -->
+  <defs>
+    <radialGradient id="eggGradient" cx="40%" cy="30%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="innerGradient" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#fffef0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe4b5;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="40" cy="85" rx="30" ry="8" fill="#00000020"/>
+  
+  <!-- Egg body -->
+  <ellipse cx="40" cy="50" rx="35" ry="45" fill="url(#eggGradient)"/>
+  
+  <!-- Inner egg -->
+  <ellipse cx="40" cy="48" rx="25" ry="32" fill="url(#innerGradient)"/>
+  
+  <!-- Highlight -->
+  <ellipse cx="30" cy="30" rx="12" ry="18" fill="#ffffff" opacity="0.6"/>
+</svg>
