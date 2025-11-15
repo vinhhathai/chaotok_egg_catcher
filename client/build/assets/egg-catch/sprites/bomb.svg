@@ -1,0 +1,41 @@
+<svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bomb gradients -->
+  <defs>
+    <radialGradient id="bombGrad" cx="40%" cy="40%">
+      <stop offset="0%" style="stop-color:#3a3a3a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="fuseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc3700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shadow -->
+  <ellipse cx="35" cy="60" rx="28" ry="6" fill="#00000030"/>
+  
+  <!-- Bomb body -->
+  <circle cx="35" cy="40" r="28" fill="url(#bombGrad)" stroke="#0a0a0a" stroke-width="2"/>
+  
+  <!-- Shine effect -->
+  <circle cx="25" cy="28" r="8" fill="#4a4a4a" opacity="0.6"/>
+  <circle cx="22" cy="25" r="4" fill="#6a6a6a" opacity="0.8"/>
+  
+  <!-- Fuse base -->
+  <rect x="32" y="5" width="6" height="15" fill="url(#fuseGrad)" rx="2"/>
+  
+  <!-- Spark/flame on fuse -->
+  <circle cx="35" cy="3" r="5" fill="#ff0000" opacity="0.8"/>
+  <circle cx="35" cy="3" r="3" fill="#ff4500" opacity="0.9"/>
+  <circle cx="35" cy="3" r="1.5" fill="#ffff00"/>
+  
+  <!-- Flame flicker points -->
+  <polygon points="35,0 33,5 37,5" fill="#ff6b00" opacity="0.6"/>
+  
+  <!-- Danger symbol -->
+  <circle cx="35" cy="40" r="10" fill="#8b0000" opacity="0.4"/>
+  <text x="35" y="47" font-family="Arial, sans-serif" font-size="14" font-weight="bold" 
+        fill="#ff0000" text-anchor="middle" opacity="0.7">💀</text>
+</svg>
